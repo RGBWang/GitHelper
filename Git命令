@@ -2,13 +2,24 @@ unity 基本命令
 mkdir ‘’ 创建文件夹
 psw 查看当前工作目录
 cat ‘’ 查看文件内容
-ls ll  查看文件夹列表内容
+ls -la|less   ll  查看文件夹列表内容
 ~ 用户家目录
 vim ‘’ 文本编辑器
+vim 命令  基本一级命令模式   ：命令二级模式 esc 退出  a.i.o编辑二级模式
+i 当前字符之前插入 I 行首插入 a 当前字符之后插入 A 行尾插入 
+o 下一行插入 O 上一行插入 x向后删除 X 向前删除 u 撤销
+dd 删除行 yy复制 p粘贴
+d+end.home 删除光标到行首.尾
+：+Q退出 ：+X退出并保存
 
 git 基本命令
 git config user.name '' 签名
 git config user.email ''签名
 git init 初始化
 git status 查看状态
-git add 包含到暂存区
+git add  文件包含到暂存区
+git rm --cached ‘’ 从暂存区移除
+git commit -m 'msg' 从暂存区提交到本地库
+git log [--oneline]查看历史版本
+git reflog 历史版本移动步数
+git reset head '哈希码' 基于索引回退版本
