@@ -1,1 +1,14 @@
-1. git init 初始化
+unity 基本命令 
+mkdir ‘’ 创建文件夹
+psw 查看当前工作目录
+cat ‘’ 查看文件内容
+ls ll  查看文件夹列表内容
+~ 用户家目录
+vim ‘’ 文本编辑器
+
+git 基本命令
+git config user.name '' 签名
+git config user.email ''签名
+git init 初始化
+git status 查看状态
+git add 包含到暂存区
