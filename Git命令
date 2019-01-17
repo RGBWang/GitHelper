@@ -35,7 +35,9 @@ git branch '' 创建分支
 git branch -v 查看分支
 git checkout 切换分支
 git merge ‘’ 合并 先切换到需要添加内容的分支，再merge目标分支
-
 git remote -v 查看远程别名
 git remote add 'origin' 'https//github.com/...' 添加别名
-git clone ‘’ 克隆远程库
+git clone ‘远程’ 克隆远程库 自动创建 origin 别名
+git push ‘远程’ ‘分支名’
+git fetch ‘远程’ ‘分支名’  本地形如 origin/master
+git pull =fetch + merge
