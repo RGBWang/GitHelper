@@ -54,3 +54,5 @@ ssh 方式登录
 5.查看 .ssh/id_rsa.pub 公钥
 6.登陆github，settings->SSH AND GPGkeys 填写
 7.git bash 创建 ssh 地址的别名
+
+ git config --global core.excludesfile ~/.gitignore  配置过滤文件
