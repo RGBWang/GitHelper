@@ -58,4 +58,4 @@ ssh 方式登录
 使用GitHub 和 VisualStudio github 工具创建流程
 1.本地创建 解决方案,git 本地库（勾选创建git库，将自动创建，配置过滤文件）
 2.通过VisualStudio github 工具直接发布到 github远程库
-3.注意 对解决方案的修改会导致 sln 文件和远程库不一致，要先 pull ，push
+3.注意 对解决方案的修改会导致 sln 文件和远程库不一致，要先 pull ，后push
