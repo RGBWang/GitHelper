@@ -45,6 +45,10 @@ git fetch ‘远程’ ‘分支名’ 下载到本地 本地形如 origin/maste
 git pull =fetch + merge
 解决冲突：1.编辑冲突文件 2.  add ‘’ 到暂存区 3.commit 到本地库 不需要文件名
 
+使用GitHub 和 VisualStudio github 工具创建流程
+1.本地创建 解决方案,git 本地库（勾选创建git库，将自动创建，配置过滤文件）
+2.通过VisualStudio github 工具直接发布到 github远程库
+3.注意 对解决方案的修改会导致 sln 文件和远程库不一致，要先 pull ，后push
 
 ssh 方式登录
 1.cd~
@@ -54,8 +58,3 @@ ssh 方式登录
 5.查看 .ssh/id_rsa.pub 公钥
 6.登陆github，settings->SSH AND GPGkeys 填写
 7.git bash 创建 ssh 地址的别名
-
-使用GitHub 和 VisualStudio github 工具创建流程
-1.本地创建 解决方案,git 本地库（勾选创建git库，将自动创建，配置过滤文件）
-2.通过VisualStudio github 工具直接发布到 github远程库
-3.注意 对解决方案的修改会导致 sln 文件和远程库不一致，要先 pull ，后push
