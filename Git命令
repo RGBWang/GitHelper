@@ -55,4 +55,7 @@ ssh 方式登录
 6.登陆github，settings->SSH AND GPGkeys 填写
 7.git bash 创建 ssh 地址的别名
 
- git config --global core.excludesfile ~/.gitignore  配置过滤文件
+使用GitHub 和 VisualStudio github 工具创建流程
+1.本地创建 解决方案,git 本地库
+2.配置过滤文件 git config --global core.excludesfile ~/.gitignore  配置过滤文件
+3.github创建远程库再上传到远程库
