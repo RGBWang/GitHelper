@@ -56,6 +56,5 @@ ssh 方式登录
 7.git bash 创建 ssh 地址的别名
 
 使用GitHub 和 VisualStudio github 工具创建流程
-1.本地创建 解决方案,git 本地库
-2.配置过滤文件 git config --global core.excludesfile ~/.gitignore  配置过滤文件
-3.github创建空的远程库再上传到远程库
+1.本地创建 解决方案,git 本地库（勾选创建git库，将自动创建，配置过滤文件）
+2.通过VisualStudio github 工具直接发布到 github远程库
