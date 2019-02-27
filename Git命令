@@ -50,6 +50,15 @@ git pull =fetch + merge
 2.通过VisualStudio github 工具直接发布到 github远程库
 3.注意 对解决方案的修改会导致 sln 文件和远程库不一致，要先 pull ，后push
 
+对于已有项目 
+1.先在 github 网站创建repository ,添加过滤文件
+2.使用gitbash 将项目克隆到本地临时文件夹
+3.将临时文件夹的所有内容拷贝到目标项目文件夹下
+4.先将修改commit 到本地库
+5.然后使用 git rebase origin/master  命令修改远程库 //本选方案 git pull --rebase 
+6.push 到远程库即可
+
+
 ssh 方式登录
 1.cd~
 2.rm -rvf .ssh
