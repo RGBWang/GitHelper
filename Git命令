@@ -66,4 +66,4 @@ ssh 方式登录
 4.其他回车默认值
 5.查看 .ssh/id_rsa.pub 公钥
 6.登陆github，settings->SSH AND GPGkeys 填写
-7.git bash 创建 ssh 地址的别名
+7.git bash 创建 ssh 地址的别名 ssh -T git@github.com
