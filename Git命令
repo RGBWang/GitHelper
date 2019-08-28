@@ -23,7 +23,7 @@ git add  文件包含到暂存区
 git commit -m 'msg' 从暂存区提交到本地库
 git log [--oneline]查看历史版本
 git reflog 可查看历史版本移动步数
-git reset --head '哈希码' 基于索引回退版本
+git reset --hard '哈希码' 基于索引回退版本
 git reset --hard HEAD^ 往后退一步
 git rm --cached ‘’ 从暂存区移除
 rm '' 删除文件
