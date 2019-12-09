@@ -1,0 +1,17 @@
+C:/Windows/Microsoft.NET/Framework/v4.0.30319/aspnet_regiis.exe -iru
+C:/Windows/Microsoft.NET/Framework64/v4.0.30319/aspnet_regiis.exe -iru
+
+%SystemRoot%\System32\svchost.exe -k netsvcs -p
+%SystemRoot%\System32\NetSetupSvc.dll
+
+C:\Windows\Microsoft.NET\Framework64\v3.0\Windows Communication Foundation\ServiceModelReg.exe -i
+C:\Windows\Microsoft.NET\Framework\v3.0\Windows Communication Foundation\ServiceModelReg.exe -i
+
+
+ Winserver 2012 安装 3.5 https://shiyousan.com/post/636311560390538452
+打开PowerShell后，直接复制下面安装.NET Framework 3.5的脚本命令，记住全部复制，然后直接全部粘贴（不要一行一行复制粘贴）：
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU' -Name UseWUServer -Value 0
+Restart-Service -Name wuauserv
+Install-WindowsFeature Net-Framework-Core
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU' -Name UseWUServer -Value 1
+Restart-Service -Name wuauserv
